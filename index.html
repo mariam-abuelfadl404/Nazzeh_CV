@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV - Nazeeh Morae Mohamed</title>
+<style>
+  :root {
+    --primary: #1a3a5c;
+    --accent: #2d6a9f;
+    --light-bg: #eef4fb;
+    --text: #2c2c2c;
+    --muted: #555;
+    --border: #c0d8f0;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Tahoma', 'Arial', sans-serif;
+    font-size: 13px;
+    color: var(--text);
+    background: #f0f4f8;
+    direction: rtl;
+    min-height: 100vh;
+  }
+
+  .page {
+    max-width: 860px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  }
+
+  /* ── Header ── */
+  .header {
+    background: linear-gradient(135deg, #1a3a5c 0%, #2d6a9f 100%);
+    color: white;
+    padding: 32px 40px;
+    text-align: center;
+  }
+  .header h1 { font-size: 28px; font-weight: bold; margin-bottom: 8px; }
+  .header .contact { font-size: 13px; opacity: 0.88; }
+  .header .contact span { margin: 0 8px; opacity: 0.5; }
+
+  /* ── Body ── */
+  .body { padding: 28px 40px; }
+
+  /* ── Section ── */
+  .section { margin-bottom: 22px; }
+  .section-title {
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--primary);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 5px;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+  }
+
+  /* ── Summary ── */
+  .summary-text { font-size: 12px; line-height: 1.9; color: #444; text-align: justify; }
+
+  /* ── Job ── */
+  .job { margin-bottom: 16px; }
+  .job-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 6px;
+    margin-bottom: 6px;
+  }
+  .job-title { font-size: 13px; font-weight: bold; color: var(--primary); }
+  .sep { color: #aaa; font-size: 12px; }
+  .company { font-size: 12px; color: var(--accent); font-weight: bold; }
+  .job ul { padding-right: 20px; }
+  .job ul li { font-size: 12px; line-height: 1.8; color: #444; margin-bottom: 2px; }
+  .job ul li::marker { color: var(--accent); }
+
+  /* ── Education ── */
+  .edu-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+  .edu-degree { font-weight: bold; color: var(--primary); font-size: 13px; }
+  .edu-uni { color: var(--muted); font-size: 12px; }
+
+  /* ── Skills ── */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 7px;
+  }
+  .skill-item {
+    background: var(--light-bg);
+    border-right: 3px solid var(--accent);
+    padding: 6px 10px;
+    font-size: 11px;
+    color: var(--primary);
+    border-radius: 4px;
+    line-height: 1.4;
+  }
+
+  /* ── Languages ── */
+  .lang-row { display: flex; flex-wrap: wrap; gap: 20px; }
+  .lang-item { display: flex; align-items: center; gap: 10px; }
+  .lang-name { font-weight: bold; font-size: 12px; color: var(--primary); }
+  .lang-badge {
+    font-size: 11px; color: #fff; background: var(--accent);
+    padding: 3px 12px; border-radius: 12px;
+  }
+
+  /* ── Achievements ── */
+  .ach-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .ach-item {
+    background: #f0f6ff; border: 1px solid var(--border);
+    border-radius: 6px; padding: 10px 14px;
+    font-size: 11.5px; color: var(--primary);
+    text-align: center; line-height: 1.5;
+  }
+  .ach-item::before { content: "★ "; color: var(--accent); }
+
+  /* ══ RESPONSIVE ══ */
+
+  @media (max-width: 700px) {
+    .page { margin: 0; border-radius: 0; box-shadow: none; }
+    .header { padding: 24px 20px; }
+    .header h1 { font-size: 22px; }
+    .body { padding: 20px 18px; }
+    .skills-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  @media (max-width: 480px) {
+    .header { padding: 18px 14px; }
+    .header h1 { font-size: 18px; }
+    .header .contact { font-size: 11px; }
+    .body { padding: 16px 14px; }
+    .section-title { font-size: 12px; }
+    .job-header { flex-direction: column; gap: 2px; }
+    .sep { display: none; }
+    .skills-grid { grid-template-columns: repeat(2, 1fr); gap: 5px; }
+    .skill-item { font-size: 10px; padding: 5px 8px; }
+    .ach-grid { grid-template-columns: 1fr; }
+    .lang-row { gap: 12px; }
+  }
+
+  @media print {
+    body { background: #fff; }
+    .page { margin: 0; box-shadow: none; border-radius: 0; max-width: 100%; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <h1>Nazeeh Morae Mohamed</h1>
+    <div class="contact">القاهرة، مصر <span>|</span> +20 1222649659</div>
+  </div>
+
+  <div class="body">
+
+    <div class="section">
+      <div class="section-title">الملخص المهني</div>
+      <p class="summary-text">
+        مهني متمرس يتمتع بخبرة واسعة تزيد عن 33 عامًا في مجالات الإدارة، والإدارة المالية، والخدمات اللوجستية.
+        أثبت خبرة في الحوكمة مزدوجة الأدوار، والإشراف على العمليات المالية المعقدة، وتبسيط إدارة المستودعات.
+        سجل حافل في تطوير عمليات إدارية قوية وتعزيز الكفاءة التشغيلية في البيئات ذات الحجم الكبير.
+      </p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">الخبرة المهنية</div>
+
+      <div class="job">
+        <div class="job-header">
+          <span class="job-title">مسؤول علاقات العملاء</span>
+          <span class="sep">|</span>
+          <span class="company">إنترموف مصر (Egypt Intermove)</span>
+        </div>
+        <ul>
+          <li>تعزيز والحفاظ على علاقات قوية مع العملاء من خلال المراقبة الاستباقية للاحتياجات وضمان مستويات عالية من الرضا.</li>
+          <li>قيادة مبادرات الدعم الفني والإداري لقاعدة عملاء متنوعة.</li>
+          <li>إعداد تقارير دورية شاملة توضح حالة العملاء ومقاييس التفاعل.</li>
+          <li>التعاون مع الأقسام المشتركة لضمان الامتثال لجودة الخدمة بنسبة 100%.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <span class="job-title">مدير الشؤون الإدارية والمالية</span>
+          <span class="sep">|</span>
+          <span class="company">شركة حورس للمنتجات السياحية</span>
+        </div>
+        <ul>
+          <li>إدارة العمليات المالية والإدارية على مستوى الشركة لتعزيز الاستقرار التنظيمي.</li>
+          <li>إعداد ميزانيات سنوية مفصلة وتقارير مالية دورية لدعم اتخاذ القرارات الاستراتيجية.</li>
+          <li>قيادة وتوجيه فرق العمل المشتركة، مع التركيز على تطوير الأداء والتميز التشغيلي.</li>
+          <li>تبسيط السياسات والإجراءات الإدارية لتحسين سير العمل الداخلي.</li>
+          <li>ضمان الامتثال الصارم للقوانين المالية وإدارة العلاقات الاستراتيجية مع الموردين والعملاء الرئيسيين.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <span class="job-title">مدير مستودع</span>
+          <span class="sep">|</span>
+          <span class="company">شركة حورس للمنتجات السياحية</span>
+        </div>
+        <ul>
+          <li>إدارة عمليات التخزين والمخزون واسعة النطاق مع التركيز على الدقة والكفاءة.</li>
+          <li>تطوير وتنفيذ أنظمة متقدمة لإدارة المخزون لتحسين مراقبة المخزون.</li>
+          <li>تدقيق البيانات والسجلات لضمان دقة تقارير المخزون بنسبة 100%.</li>
+          <li>الشراكة مع أقسام المشتريات والمبيعات لمزامنة أنشطة سلسلة التوريد.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">التعليم</div>
+      <div class="edu-row">
+        <span class="edu-degree">بكالوريوس التجارة</span>
+        <span class="sep">|</span>
+        <span class="edu-uni">جامعة عين شمس</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">المهارات</div>
+      <div class="skills-grid">
+        <div class="skill-item">إدارة التدفقات النقدية</div>
+        <div class="skill-item">التحليل المالي</div>
+        <div class="skill-item">إعداد الميزانية</div>
+        <div class="skill-item">الإدارة المالية</div>
+        <div class="skill-item">الخدمات اللوجستية</div>
+        <div class="skill-item">إدارة المخزون</div>
+        <div class="skill-item">أنظمة المخزون</div>
+        <div class="skill-item">إدارة المستودعات</div>
+        <div class="skill-item">بناء العلاقات</div>
+        <div class="skill-item">حل المشكلات</div>
+        <div class="skill-item">متابعة العملاء</div>
+        <div class="skill-item">خدمة العملاء</div>
+        <div class="skill-item">التدريب</div>
+        <div class="skill-item">تطوير الأداء</div>
+        <div class="skill-item">إدارة الفريق</div>
+        <div class="skill-item">القيادة</div>
+        <div class="skill-item">أنظمة إدارة المستودعات</div>
+        <div class="skill-item">إتقان الحاسوب</div>
+        <div class="skill-item">التكنولوجيا</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">اللغات</div>
+      <div class="lang-row">
+        <div class="lang-item">
+          <span class="lang-name">العربية</span>
+          <span class="lang-badge">اللغة الأم</span>
+        </div>
+        <div class="lang-item">
+          <span class="lang-name">الإنجليزية</span>
+          <span class="lang-badge">احترافي</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">الإنجازات الرئيسية</div>
+      <div class="ach-grid">
+        <div class="ach-item">إدارة العمليات المالية بنجاح لمدة 27 عامًا</div>
+        <div class="ach-item">تطوير أنظمة فعالة لإدارة المستودعات</div>
+        <div class="ach-item">بناء علاقات قوية مع العملاء وضمان رضاهم</div>
+        <div class="ach-item">قيادة الفرق وتحسين العمليات التشغيلية</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
